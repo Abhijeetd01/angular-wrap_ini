@@ -1,12 +1,11 @@
 import { Component } from '@angular/core';
 import { products } from '../products';
-import {MatCardModule} from '@angular/material/card';
-
+// import {MatCardModule} from '@angular/material/card';
 
 @Component({
   selector: 'app-product-list',
   templateUrl: './product-list.component.html',
-  styleUrls: ['./product-list.component.css']
+  styleUrls: ['./product-list.component.css'],
 })
 export class ProductListComponent {
   products = products;
