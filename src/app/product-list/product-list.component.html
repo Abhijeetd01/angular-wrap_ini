@@ -1,13 +1,13 @@
 <h2>Products</h2>
 <!-- /*first card */ -->
-<div class="card">
+<div *ngFor="let product of products" class="card">
   <div class="container">
-    <h4><b>Card A</b></h4>
+    <h3>
+      <a [title]="product.name + ' details'">
+        {{ product.name }}
+      </a>
+    </h3>
   </div>
-</div>
-<br />
-<div class="card">
-  <div class="container">
-    <h4><b>Card B</b></h4>
-  </div>
+  <p *ngIf="product.description">Description: {{ product.description }}</p>
+  <button type="button" (click)="share()">Share</button>
 </div>
