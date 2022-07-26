@@ -1,5 +1,6 @@
 <h2>Products</h2>
 <!-- /* cards */ -->
+
 <div *ngFor="let product of products" class="card">
   <div class="container">
     <h3>
@@ -11,6 +12,13 @@
       <p *ngIf="product.description">Description: {{ product.description }}</p>
       <div class="float-child">
         <button type="button" (click)="share()">Share</button>
+      </div>
+      <div class="float-child">
+        <app-app-product-alerts
+          *ngFor="let product of products"
+          [product]="product"
+        >
+        </app-app-product-alerts>
       </div>
     </div>
   </div>

@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { products } from '../products';
+// import { Product } from '../products';
 // import {MatCardModule} from '@angular/material/card';
 
 @Component({
